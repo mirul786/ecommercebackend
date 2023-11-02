@@ -2,7 +2,7 @@
 FROM node:14
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /usr/src/server
 
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
@@ -17,4 +17,4 @@ COPY . .
 # EXPOSE 8080
 
 # Start the Node.js app when the container is run
-CMD ["npm", "start"]
+CMD ["npm", "start"]
